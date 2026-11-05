@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HAS privacy notice</title>
+<meta name="description" content="How HAS handles your data during private testing: what stays on your phone, what is sent to the HAS server and to Apple, Google, Microsoft and Anthropic, and how to erase it.">
+<style>
+  :root {
+    --bg: #f4f6f8; --ink: #1d2a36; --dusk: #4c6174; --seaglass: #2f8b85; --ember: #c8663a; --line: #d6dde4; --card: #ffffff;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16202a; --ink: #e8edf2; --dusk: #a9b8c6; --seaglass: #6fc3bd; --ember: #e58a5c; --line: #2b3a48; --card: #1d2a36; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: 36px; margin: 0 0 4px; }
+  .tag { color: var(--dusk); margin: 0 0 28px; }
+  h2 { font-size: 20px; font-weight: 600; margin: 34px 0 8px; }
+  h3 { font-size: 17px; font-weight: 600; margin: 20px 0 6px; }
+  p { margin: 0 0 14px; }
+  ul { padding-left: 20px; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--seaglass); }
+  .note { border-left: 3px solid var(--ember); padding: 10px 14px; background: var(--card); border-radius: 0 8px 8px 0; margin: 20px 0; }
+  .placeholder { background: #ffe9a8; color: #4a3a00; padding: 0 4px; border-radius: 3px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--dusk); font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>HAS privacy notice</h1>
+  <p class="tag">For private testing. Version 1, effective 4 November 2026.</p>
+
+  <p>HAS is a household assistant for your phone, made and run by Humberto Oliveira in Vancouver, Canada. This notice says, in plain words, what HAS does with your data while it is in private testing. It is written to be accurate about what the app does today, not about what it may do later. When HAS has final terms and a final privacy policy, the app will ask you to read and accept them.</p>
+
+  <div class="note">
+    <p>The short version: your lists, calendar, places and conversations are stored on your phone, not on a server. Each time you ask HAS something, your message, the conversation so far and the details needed to answer are sent to the HAS server and on to Anthropic, the AI provider, to produce the answer, and are not stored there. The one thing HAS keeps on the server about you, besides your account, is what it learns about you if you turn Learning on, and you can erase that at any time.</p>
+  </div>
+
+  <h2>Who HAS is for</h2>
+  <p>During private testing HAS is for adults. Sign-up asks for your date of birth to make sure of that. You join by invitation or through a TestFlight link, and you can stop at any time.</p>
+
+  <h2>What stays on your phone</h2>
+  <ul>
+    <li>Your tasks, grocery lists and grocery history, your notes, and any photos you attach.</li>
+    <li>Your appointments, including a copy of the calendars you connect.</li>
+    <li>Your conversations with HAS. They are stored only on the phone; the server keeps no copy.</li>
+    <li>Your location history, if you allow it: the places where you stopped and the moves between them, recorded by the phone. It never leaves the phone except as described under "Asking about a day" below.</li>
+    <li>A log of what you did in the app, so HAS can answer questions like "when did I add this".</li>
+    <li>Sign-in credentials and the keys that secure your data, in the phone's keychain.</li>
+  </ul>
+  <p>This data is kept in a protected store that is excluded from iCloud backup. If you want a copy, Profile offers "Save a copy of this phone's HAS data", a plain file you control. You can lock the app with Face ID.</p>
+
+  <h2>What leaves your phone, and to whom</h2>
+
+  <h3>The HAS server</h3>
+  <p>The HAS server runs on Microsoft Azure in the United States (West US). It receives:</p>
+  <ul>
+    <li>Your email address, for the sign-in code, and your date of birth.</li>
+    <li>The consents you give or withdraw in the app, with the exact text you saw.</li>
+    <li>Each message you send to HAS, together with the conversation so far and the details HAS pulls from your lists, calendar, places and activity only when your question needs them. The server passes them on to produce the answer and does not store them.</li>
+    <li>What HAS learns about you, if Learning is on (see below).</li>
+    <li>Counts of use, so that the shared testing budget is not exceeded. These counts are not tied to your name or account.</li>
+    <li>Whether a crisis card was shown (a count, never the message).</li>
+  </ul>
+  <p>The server's logs record counts and timings, not content. There is no analytics, advertising or crash-reporting library in the app.</p>
+
+  <h3>Anthropic, the AI provider</h3>
+  <p>To write an answer, the HAS server sends your message, the conversation so far and the details mentioned above to Anthropic's service, in the United States. Anthropic processes them under its commercial terms for software makers, which do not allow it to use your data to train its models. Anthropic may keep inputs for a limited time for safety checks. HAS does not yet have a zero-retention arrangement with Anthropic; if that changes, this notice will say so.</p>
+
+  <h3>Apple</h3>
+  <ul>
+    <li>Weather: the weather line asks Apple's WeatherKit for the weather at your rounded location, with a short-lived token from the HAS server. The server does not receive your position.</li>
+    <li>Maps: when you search for an address or look at the map, Apple's Maps service receives what you searched and the area you viewed. The coordinates of your saved places are stored on the phone.</li>
+    <li>Voice typing: if you use it, Apple's speech service may process the audio. HAS never records audio and never sends it to its server.</li>
+    <li>TestFlight: Apple handles the installation and the updates of a testing app under its own terms.</li>
+  </ul>
+
+  <h3>Google and Microsoft, only if you connect a calendar</h3>
+  <ul>
+    <li>Google Calendar: HAS reads the calendars and events you allow and can add, change or remove single appointments you confirm. Google will show a warning that HAS is not yet verified; that is expected during testing.</li>
+    <li>Outlook calendar: HAS reads the calendar you allow. Writing appointments to Outlook is not available yet.</li>
+    <li>The phone's own calendar: HAS reads it and adds the appointments you confirm to the calendar you choose.</li>
+  </ul>
+  <p>Your calendar sign-ins are stored on the phone. Appointment details are sent to the HAS server and to Anthropic only when a question needs them.</p>
+
+  <h3>Expo, the update service</h3>
+  <p>When the app starts it checks for updates with Expo's service, sending the app version and a random installation id. This is how fixes reach you without a new install.</p>
+
+  <h2>Learning: what HAS may come to understand</h2>
+  <p>If you turn Learning on, HAS keeps a private portrait of what matters to you, drawn from your conversations. As the app says before you choose: as you talk, HAS may come to understand sensitive things, such as how you feel, your health, or the people in your life. That understanding is stored on the HAS server and is yours to erase, by period or entirely, at any time, from the app. With Learning off, HAS does not learn. Your conversations themselves stay on the phone either way.</p>
+
+  <h2>Asking about a day</h2>
+  <p>When you ask HAS about a particular day, it may include that day's stops, with the names and addresses you gave them, the moves between them and their coordinates, in the request that produces the answer. They travel only for that answer and are not stored by the server or by Anthropic beyond what is described above. You can erase your location history from the app, by day or entirely, and the "Erase all" control in Profile removes it from the phone.</p>
+
+  <h2>If you are in difficulty</h2>
+  <p>HAS checks messages for signs of crisis so it can show help lines (for the United States, Canada and Brazil, with a web resource elsewhere). HAS is software, not a person, and the app says so under every conversation. The server keeps a count of how often the card was shown, never the message.</p>
+
+  <h2>How long data is kept, and how to delete it</h2>
+  <ul>
+    <li>Your phone data: as long as you keep it. Delete conversations, lists, history or the app itself on the phone.</li>
+    <li>What HAS learns: until you erase it in the app, by period or entirely. The live copy is removed at once; the server's backups can hold a copy for a limited time after that.</li>
+    <li>Your account on the server (email, date of birth, consents, sign-in sessions): until you ask for it to be removed. During testing there is no delete-account button; write to the address below and it is done by hand. The in-app notice says the same: you can stop, and have your account erased, at any time.</li>
+  </ul>
+
+  <h2>Who can see your data</h2>
+  <p>The person running HAS can reach the server's database, which holds your account and, if Learning is on, your portrait. He cannot read your conversations, because they are not stored on the server. Anthropic processes the content it is sent, as described above. Nothing is shared between HAS users; shared household features are not built.</p>
+
+  <h2>Security</h2>
+  <p>Everything travels over encrypted connections. Sign-in is by a code sent to your email. The phone's data lives in a protected store with device-only keys and can be locked with Face ID. The server's own secrets are kept in Azure Key Vault. No system is perfectly secure, and this is a testing app; keep that in mind when you decide what to tell it.</p>
+
+  <h2>Your choices and rights</h2>
+  <p>You can refuse Learning, the location permission, the calendar connections and the microphone, and HAS works without them. You can ask what HAS holds about you, ask for a copy, ask for corrections, or ask for everything to be removed. Write to <a href="mailto:humberto.hbro@gmail.com">humberto.hbro@gmail.com</a>. If you live in Canada, Brazil or the European Union, the privacy laws there give you these rights by name; they apply to HAS as they do to any small service that handles personal data.</p>
+
+  <h2>Changes to this notice</h2>
+  <p>This notice will change as HAS changes. The version and date at the top tell you which one you are reading. When final terms and a final privacy policy exist, the app will ask you to read and accept them before you continue.</p>
+
+  <footer>HAS, made and run by Humberto Oliveira, Vancouver, Canada. <a href="index.html">Home</a>.</footer>
+</main>
+</body>
+</html>

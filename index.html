@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HAS</title>
+<meta name="description" content="HAS is a private household assistant for your phone. It keeps your lists, your days and your places on the phone and talks with you about them.">
+<style>
+  :root {
+    --bg: #f4f6f8; --ink: #1d2a36; --dusk: #4c6174; --seaglass: #2f8b85; --ember: #c8663a; --line: #d6dde4; --card: #ffffff;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16202a; --ink: #e8edf2; --dusk: #a9b8c6; --seaglass: #6fc3bd; --ember: #e58a5c; --line: #2b3a48; --card: #1d2a36; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: 44px; letter-spacing: 0.02em; margin: 0 0 4px; }
+  .tag { color: var(--dusk); margin: 0 0 32px; }
+  h2 { font-size: 19px; font-weight: 600; margin: 32px 0 8px; }
+  p { margin: 0 0 14px; }
+  ul { padding-left: 20px; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--seaglass); }
+  .note { border-left: 3px solid var(--ember); padding: 10px 14px; background: var(--card); border-radius: 0 8px 8px 0; margin: 20px 0; }
+  .placeholder { background: #ffe9a8; color: #4a3a00; padding: 0 4px; border-radius: 3px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--dusk); font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>HAS</h1>
+  <p class="tag">A private household assistant that lives on your phone.</p>
+
+  <p>HAS keeps the small things of a household in one place: your tasks and grocery lists, your appointments, the places you go. You can type or talk to it, ask what you have on a day, where you were on a Tuesday, or when you last bought milk, and it answers from your own records.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Tasks and grocery lists, with repeats, reminders and a history of what you bought.</li>
+    <li>A calendar that can show the calendars already on your phone, and your Google or Outlook calendar if you connect one.</li>
+    <li>A private location history, kept on the phone, so you can ask about a day and see your stops on a map.</li>
+    <li>A conversation with HAS about all of it. If you let it, HAS learns what matters to you over time, and you can erase that at any time.</li>
+  </ul>
+
+  <h2>Where your data lives</h2>
+  <p>Your lists, calendar, places and conversations are stored on your phone. When you ask HAS something, your message and the details needed to answer it are sent to the HAS server and to the AI provider that writes the answer, and are not kept there. The details are in the <a href="privacy.html">privacy notice</a>.</p>
+
+  <h2>Private testing</h2>
+  <div class="note">
+    <p>HAS is in private testing on iPhone, through Apple's TestFlight. It is for adults. There are no final terms yet; the privacy notice above describes how testing works today.</p>
+    <p>To join: <span class="placeholder">[TestFlight link goes here once Apple approves the build]</span></p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>HAS is made and run by Humberto Oliveira. Questions and requests about your data: <a href="mailto:humberto.hbro@gmail.com">humberto.hbro@gmail.com</a>.</p>
+
+  <footer>Privacy notice for private testing: <a href="privacy.html">privacy.html</a>.</footer>
+</main>
+</body>
+</html>
